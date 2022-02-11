@@ -1,6 +1,7 @@
 """Its mad libs"""
 
-source = "It was a cold, <adjective> November day. I woke up to the <adjective> smell of <type of bird> roasting in the <room in a house> downstairs. I <verb (past tense)> down the stairs to see if I could help <verb> the dinner. My mom said \"See if <name> needs a fresh <noun>.\" So I carried a tray of glasses full of <liquid> into the <verb ending in -ing> room. When I got there, I couldn\'t believe my <part of the body (plural)>! There were <plural noun> <verb ending in -ing> on the <noun>!"
+file = open("source.txt", "r")
+source = file.read()
 
 def locate_blanks(source):
     """Searches through the source string and locates the blanks where words will be added."""
